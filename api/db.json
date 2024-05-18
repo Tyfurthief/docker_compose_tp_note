@@ -1,0 +1,23 @@
+{
+  "notes": [
+    {
+      "title": "noteee",
+      "content": "loler\nzerzer",
+      "checked": true,
+      "updatedAt": "2024-01-30T18:42:41.412Z",
+      "createdAt": "2024-01-29T20:52:39.892Z",
+      "id": 1
+    },
+    {
+      "title": "Nouvelle note",
+      "content": "Contenu de la notee",
+      "checked": true,
+      "updatedAt": "2024-01-30T18:39:37.327Z",
+      "createdAt": "2024-01-29T20:52:39.892Z",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "Arnaud"
+  }
+}

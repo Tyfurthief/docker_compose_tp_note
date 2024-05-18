@@ -1,0 +1,23 @@
+services:
+  react-app:
+    build:
+      context: ./web-app
+      dockerfile: Dockerfile
+      args:
+        REACT_APP_HOST_URL: "http://HOST_MACHINE_IP:3000"
+    ports:
+      - "8080:80"
+    depends_on:
+      - json-server
+
+  json-server:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - db-volume:/usr/src/app
+
+volumes:
+  db-volume:

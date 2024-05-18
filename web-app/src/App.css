@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(44, 51, 56);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.Side {
+  position: fixed;
+  height: 100vh;
+  width: 240px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(29, 35, 39);
+}
+
+.Loading {
+  text-align: center;
+  padding: 16px;
+}
+
+.Main {
+  height: 100vh;
+  margin-inline-start: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Note-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Notes-list {
+  padding-inline-start: 0;
+  list-style-type: none;
+  overflow: auto;
+  height: 85vh;
+}
+
+.Notes-list li {
+  width: 100%;
+}
+
+.Notes-Lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Note-link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: bold;
+}
+
+.Note-link.active {
+  background-color: darkslategrey;
+  width: 100%;
+}
+
+.Note-link-lastUpdatedAt {
+  font-size: 10px;
+  color: darkgrey;
+}
+
+.Header-Create-Note {
+  display: flex;
+  margin: 10px;
+}
+
+.Button-create-note {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 24px;
+  color: white;
+  background-color: rgb(44, 51, 56);
+  text-align: center;
+}
+
+.Button-delete-note,
+.Button-save-note,
+.Button-Search-Note {
+  padding: 6px 14px;
+  margin-left: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+.Button-delete-note:focus,
+.Button-save-note:focus,
+.Button-Search-Note:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+.Form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.Note-editable {
+  width: 100%;
+  border: none;
+  padding: 16px;
+  background: transparent;
+  color: inherit;
+}
+
+.Note-editable:focus-visible {
+  outline: 0;
+  box-shadow: inset 0px 0px 0px 2px white;
+}
+
+.Note-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Note-content {
+  flex-grow: 1;
+  resize: none;
+  font-family: inherit;
+}
+
+.Note-actions {
+  font-size: 14px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.User {
+  padding: 8px 10px 10px 10px;
+  height: 100%;
+  color: darkgrey;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  background-color: darkslategrey;
+}
+
+.Temperature {
+  padding: 8px;
+  font-size: 10px;
+  color: darkgrey;
+}
